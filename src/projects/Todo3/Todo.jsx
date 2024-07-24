@@ -7,10 +7,10 @@ import "./Todo.css";
 
 // const todoKey = "reactTodo"
 
-// const getLocalStorageTodoData = () => {
-//     const rawTodos = localStorage.getItem(todoKey);
-//     if (!rawTodos) return [];
-//     return JSON.parse(rawTodos);
+// const getLocalStorageTodoData = () => { 
+//     const rawTodos = localStorage.getItem(todoKey); 
+//     if (!rawTodos) return []; 
+//     return JSON.parse(rawTodos); 
 // };
 
 export const Todo = () => {
@@ -65,7 +65,7 @@ export const Todo = () => {
         <>
             <section className="todo-container">
                 <header>
-                    <h1>Task-List</h1>
+                    <h1>Task List</h1>
                     <TodoDate />
                 </header>
 
