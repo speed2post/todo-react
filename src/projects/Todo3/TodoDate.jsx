@@ -11,5 +11,5 @@ export const TodoDate = () => {
         setdateTime(`${formatedDate} - ${formatedTime}`);
     }, 1000);
 
-    return <h2>{dateTime}</h2>
+    return <h2>Date : {dateTime}</h2>
 }
