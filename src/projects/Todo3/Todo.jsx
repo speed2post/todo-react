@@ -65,7 +65,7 @@ export const Todo = () => {
         <>
             <section className="todo-container">
                 <header>
-                    <h1>Task List</h1>
+                    <h1>Task * List</h1>
                     <TodoDate />
                 </header>
 
