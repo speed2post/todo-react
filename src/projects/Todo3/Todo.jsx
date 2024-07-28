@@ -33,7 +33,7 @@ export const Todo = () => {
 
     //todo save to local storage
     // localStorage.setItem(todoKey, JSON.stringify(task));
-     setLocalStorageTodoData(task)
+    setLocalStorageTodoData(task)
 
 
     //todo delete a particular selected item
@@ -60,6 +60,14 @@ export const Todo = () => {
     const handelClearAllTodo = () => {
         setTask([]);
     }
+
+    //todo clear all items
+    const handelClearCheckedAllTodo = () => {
+        const incompleteTask = task.filter((curTask) => curTask.checked === false)
+        console.log(incompleteTask);
+        setTask(incompleteTask);
+    }
+
 
     return (
         <>
@@ -90,7 +98,10 @@ export const Todo = () => {
                     </ul>
                 </section>
                 <section>
-                    <button className="clear-btn" onClick={handelClearAllTodo}>Clear All</button>
+                    <button className="clear-btn"
+                        onClick={handelClearAllTodo}>Clear All</button>
+                    <button className="clear-btn"
+                        onClick={handelClearCheckedAllTodo}>Remove Checked</button>
                 </section>
             </section>
         </>
