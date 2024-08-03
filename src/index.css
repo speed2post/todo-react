@@ -1,5 +1,14 @@
+/* Download from https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Download from https://www.dafont.com/ */
+@font-face {
+    font-family: Myfont;
+    src: url(./Fonts/Coffee\ Spark.otf);
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Urbanist", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

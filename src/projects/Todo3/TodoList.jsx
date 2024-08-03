@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdCheck, MdDeleteForever } from 'react-icons/md';
 
-export function TodoList({ 
+export function TodoList({
     id,
     data,
     checked,
@@ -10,15 +10,18 @@ export function TodoList({
     return (
         <>
             <li className="todo-item">
-                <span className={checked ? "checkList" : "notCheckList" }>{data}</span>
-                <button className="check-btn"
-                    onClick={() => onhandelCheckTodo(id)}>
-                    <MdCheck />
-                </button>
+                <span className={checked ? "checkList" : "notCheckList"}>{data}</span>
+
+               
                 <button className="delete-btn"
                     onClick={() => onhandelDeleteTodo(id)}>
                     <MdDeleteForever />
                 </button>
+                <button className="check-btn"
+                    onClick={() => onhandelCheckTodo(id)}>
+                    <MdCheck />
+                </button>
+
             </li>
         </>
     );

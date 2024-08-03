@@ -73,7 +73,7 @@ export const Todo = () => {
         <>
             <section className="todo-container">
                 <header>
-                    <h1>Task Manager</h1>
+                    <h1>Task - Manager</h1>
                     <TodoDate />
                 </header>
 
@@ -85,7 +85,7 @@ export const Todo = () => {
                             task.map((curTask) => {
                                 return (
                                     <TodoList
-                                        key={curTask.id}
+                                        key={curTask.curid}
                                         id={curTask.id}
                                         data={curTask.content}
                                         checked={curTask.checked}
@@ -97,7 +97,7 @@ export const Todo = () => {
                         }
                     </ul>
                 </section>
-                <section>
+                <section className="clearList">
                     <button className="clear-btn"
                         onClick={handelClearAllTodo}>Clear All</button>
                     <button className="clear-btn"

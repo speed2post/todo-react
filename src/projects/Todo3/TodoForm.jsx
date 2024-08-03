@@ -28,8 +28,6 @@ export const TodoForm = ({ onAddTodo }) => {
                             onChange={handeInputChange}
                             // onChange={e => handeInputChange(e)}
                         />
-                    </div>
-                    <div>
                         <button type="submit" className="todo-btn">Add Task</button>
                     </div>
                 </section>

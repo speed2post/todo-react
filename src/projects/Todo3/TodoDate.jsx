@@ -8,7 +8,7 @@ export const TodoDate = () => {
         const now = new Date();
         const formatedDate = now.toLocaleDateString();
         const formatedTime = now.toLocaleTimeString();
-        setdateTime(`${formatedDate} - ${formatedTime}`);
+        setdateTime(`${formatedDate}  ${formatedTime}`);
     }, 1000);
 
     return <h2>Date : {dateTime}</h2>
